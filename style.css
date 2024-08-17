@@ -1,0 +1,28 @@
+:root {
+    --blue-background: blue;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    background-color: salmon;
+}
+
+.sidebar {
+    background-color: skyblue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    height: 100vh;
+}
+
+.main {
+    background-color: gainsboro;
+}
