@@ -23,7 +23,7 @@ body {
 .right-container {
     height: 100vh;
     display: grid;
-    grid-template-rows: minmax(120px, 1fr) 4fr;
+    grid-template-rows: minmax(130px, 1fr) 4fr;
 }
 
 /* SIDEBAR */
@@ -77,10 +77,11 @@ body {
 /* HEADER */
 
 .header {
-    padding: 10px 30px 10px 40px;
+    padding: 5px 100px 10px 60px;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
 }
 
 .header img{
@@ -100,4 +101,62 @@ body {
     border-radius: 20px;
     border: none;
     background-color: var(--light-gray-background);
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 30px;
+}
+
+#account-picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.user {
+    font-weight: 500;
+}
+
+.user-details {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 10px;
+    align-items: center;
+
+    p {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+#profile-picture {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+#username {
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+.header-section button {
+    background-color: var(--blue-background);
+    color: white;
+    border: none;
+    border-radius: 30px;
+
+    height: 30px;
+    width: 80px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 30px;
 }
