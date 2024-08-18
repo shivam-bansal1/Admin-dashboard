@@ -2,6 +2,7 @@
 
 :root {
     --blue-background: #119eda;
+    --light-gray-background: #e2e8f0;
 }
 
 body {
@@ -76,16 +77,27 @@ body {
 /* HEADER */
 
 .header {
-    background-color: salmon;
-    padding: 15px 30px 10px 40px;
-    
+    padding: 10px 30px 10px 40px;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-.search-bar-container img,
-.profile-links img,
-.user-details img{
+.header img{
+    height: 20px;
+}
+
+.search-bar-container {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.search-bar {
+    width: 600px;
     height: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--light-gray-background);
 }
