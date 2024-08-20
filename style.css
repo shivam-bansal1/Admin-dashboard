@@ -171,10 +171,6 @@ body {
     column-gap: 20px;
 }
 
-.left-section {
-    background-color: skyblue;
-}
-
 .right-section {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -246,4 +242,25 @@ hr {
     border-radius: 15px;
     background-color: #fff;
     object-fit: contain;
+}
+
+
+/* Projects Panel */
+
+.star,
+.eye,
+.share {
+    height: 20px;
+}
+
+/* .project-card {
+    width: 300px;
+} */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
 }
