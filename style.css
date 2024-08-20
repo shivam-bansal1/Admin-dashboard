@@ -3,12 +3,15 @@
 :root {
     --blue-background: #119eda;
     --light-gray-background: #e2e8f0;
+    --light-gray-font: #5c5c5c;
+    --lh: 1rem;
 }
 
 body {
     padding: 0;
     margin: 0;
     font-family: Roboto, Arial;
+    line-height: var(--lh);
 }
 
 .container {
@@ -77,7 +80,6 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
 }
 
 .header img{
@@ -161,8 +163,8 @@ body {
 /* MAIN CONTENT */
 
 .main {
-    background-color: gainsboro;
-    padding: 20px 20px;
+    background-color: var(--light-gray-background);
+    padding: 10px 20px;
 
     display: grid;
     grid-template-columns: 2.5fr 1fr;
@@ -176,10 +178,39 @@ body {
 .right-section {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 20px;
+    row-gap: 10px;
 }
 
-.announcement-container,
 .trending-container {
     background-color: salmon;
+}
+
+.main p {
+    margin: 0;
+}
+
+.content-container {
+    background-color: white;
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-container .title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content .description {
+    color: var(--light-gray-font);
+    font-size: 10px;
+    text-overflow: ellipsis;
+    max-height: calc(var(--lh) * 3);
+    overflow: hidden;
+}
+
+hr {
+    border: none; 
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
 }
