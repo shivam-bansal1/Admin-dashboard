@@ -5,6 +5,7 @@
     --light-gray-background: #e2e8f0;
     --light-gray-font: #7d7d7d;
     --lh: 1rem;
+    --shadow: 2px 3px 4px rgba(0, 0, 0, 0.2)
 }
 
 body {
@@ -188,6 +189,8 @@ body {
     margin-top: 15px;
     padding: 20px;
     border-radius: 10px;
+
+    box-shadow: var(--shadow);
 }
 
 .announcement-container .content-container .title {
@@ -218,6 +221,8 @@ hr {
     border-radius: 10px;
     display: grid;
     row-gap: 20px;
+
+    box-shadow: var(--shadow);
 }
 
 .trending-container .content {
@@ -270,6 +275,8 @@ hr {
     border-left: 8px solid rgb(255, 170, 0);
     height: 130px;
     position: relative;
+
+    box-shadow: var(--shadow);
 }
 
 .project-title {
